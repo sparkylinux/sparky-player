@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "$1" = "" ]; then
+	echo ""
+	echo "Sparky Player is a simply media player."
+	echo ""
+	echo "sparky-player usage is as follows:"
+	echo "sparky-player multimedia-file"
+	echo ""
+	echo "It supports all multimedia formats"
+	echo "which are supported by ffplay"
+	echo ""
+	exit 1
+else
+	ffplay "$1"
+fi
+
+exit 0
